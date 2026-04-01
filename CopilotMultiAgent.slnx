@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/CopilotMultiAgent.API/CopilotMultiAgent.API.csproj" />
+    <Project Path="src/CopilotMultiAgent.Application/CopilotMultiAgent.Application.csproj" />
+    <Project Path="src/CopilotMultiAgent.Domain/CopilotMultiAgent.Domain.csproj" />
+    <Project Path="src/CopilotMultiAgent.Infrastructure/CopilotMultiAgent.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/CopilotMultiAgent.API.Tests/CopilotMultiAgent.API.Tests.csproj" />
+    <Project Path="tests/CopilotMultiAgent.Application.Tests/CopilotMultiAgent.Application.Tests.csproj" />
+    <Project Path="tests/CopilotMultiAgent.Domain.Tests/CopilotMultiAgent.Domain.Tests.csproj" />
+    <Project Path="tests/CopilotMultiAgent.Infrastructure.Tests/CopilotMultiAgent.Infrastructure.Tests.csproj" />
+  </Folder>
+</Solution>
