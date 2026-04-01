@@ -23,7 +23,7 @@ For every task, follow these phases in order. Never skip a phase.
 
 ## Phase 1 — Planning
 
-Use "plan" skill to write a detailed plan. The plan MUST include:
+Use "plan" skill to write a detailed plan (.github/skills/plan/SKILL.md). The plan MUST include:
 1. Components to create or modify
 2. **Test Matrix** categorized by: **Happy Path**, **Sad Path** (validation failures, not-found), and **Edge Cases** (nulls, empty strings, boundary values)
 3. Areas explicitly **excluded** from testing (e.g., pure DTOs) with reason
