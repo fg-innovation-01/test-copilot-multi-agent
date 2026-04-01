@@ -29,6 +29,7 @@ public static class DependencyInjection
         services.AddScoped<ISphereVolumeService, SphereVolumeService>();
         services.AddScoped<ICubeVolumeService, CubeVolumeService>();
         services.AddScoped<ICylinderVolumeService, CylinderVolumeService>();
+        services.AddScoped<ITriangularPyramidVolumeService, TriangularPyramidVolumeService>();
 
         return services;
     }
