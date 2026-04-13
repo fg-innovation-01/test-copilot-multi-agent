@@ -30,6 +30,7 @@ public static class DependencyInjection
         services.AddScoped<ICubeVolumeService, CubeVolumeService>();
         services.AddScoped<ICylinderVolumeService, CylinderVolumeService>();
         services.AddScoped<ITriangularPyramidVolumeService, TriangularPyramidVolumeService>();
+        services.AddScoped<IRhombusService, RhombusService>();
 
         return services;
     }

@@ -117,4 +117,18 @@ public class SortingServiceTests
         // Assert
         result.SortedNumbers.Should().BeEmpty();
     }
+
+    [Fact]
+    public void Sort_WithInvalidAlgorithm_ShouldThrowArgumentOutOfRangeException()
+    {
+        // Arrange — cast an invalid int to the SortAlgorithm enum to hit the default switch branch
+        var invalidAlgorithm = (SortAlgorithm)999;
+        var request = new SortRequestDto([1, 2], invalidAlgorithm, SortDirection.Ascending);
+
+        // Act
+        var act = () => _sut.Sort(request);
+
+        // Assert
+        act.Should().Throw<ArgumentOutOfRangeException>();
+    }
 }

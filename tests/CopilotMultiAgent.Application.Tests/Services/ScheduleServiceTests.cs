@@ -233,4 +233,37 @@ public class ScheduleServiceTests
         result.IsCompleted.Should().BeFalse();
         await _repository.Received(1).UpdateAsync(Arg.Is<Schedule>(s => !s.IsCompleted));
     }
+
+    [Fact]
+    public async Task UpdateAsync_WhenNotCompleted_SetToTrue_ShouldCallComplete()
+    {
+        // Arrange
+        var item = Schedule.Create("Meeting", DateTime.UtcNow.AddDays(1));
+        _repository.GetByIdAsync(item.Id).Returns(item);
+        var dto = new UpdateScheduleDto("Meeting", item.ScheduledAt, RecurrenceType.None, true);
+
+        // Act
+        var result = await _sut.UpdateAsync(item.Id, dto);
+
+        // Assert
+        result.IsCompleted.Should().BeTrue();
+        await _repository.Received(1).UpdateAsync(Arg.Is<Schedule>(s => s.IsCompleted));
+    }
+
+    [Fact]
+    public async Task UpdateAsync_WhenAlreadyCompleted_SetToTrue_ShouldLeaveCompleted()
+    {
+        // Arrange — dto.IsCompleted=true AND schedule.IsCompleted=true → neither if nor else if block entered
+        var item = Schedule.Create("Meeting", DateTime.UtcNow.AddDays(1));
+        item.Complete();
+        _repository.GetByIdAsync(item.Id).Returns(item);
+        var dto = new UpdateScheduleDto("Meeting", item.ScheduledAt, RecurrenceType.None, true);
+
+        // Act
+        var result = await _sut.UpdateAsync(item.Id, dto);
+
+        // Assert
+        result.IsCompleted.Should().BeTrue();
+        await _repository.Received(1).UpdateAsync(Arg.Is<Schedule>(s => s.IsCompleted));
+    }
 }

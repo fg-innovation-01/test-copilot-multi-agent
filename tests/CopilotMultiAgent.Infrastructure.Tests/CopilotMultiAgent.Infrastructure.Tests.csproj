@@ -25,4 +25,8 @@
     <ProjectReference Include="..\..\src\CopilotMultiAgent.Infrastructure\CopilotMultiAgent.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="TestResults\" />
+  </ItemGroup>
+
 </Project>

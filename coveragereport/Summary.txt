@@ -1,0 +1,95 @@
+Summary
+  Generated on: 4/10/2026 - 3:53:57 PM
+  Coverage date: 4/2/2026 - 1:12:51 AM - 4/10/2026 - 3:53:48 PM
+  Parser: MultiReport (18x Cobertura)
+  Assemblies: 4
+  Classes: 67
+  Files: 66
+  Line coverage: 69.4%
+  Covered lines: 870
+  Uncovered lines: 382
+  Coverable lines: 1252
+  Total lines: 2284
+  Branch coverage: 42.2% (153 of 362)
+  Covered branches: 153
+  Total branches: 362
+  Method coverage: 90.5% (229 of 253)
+  Full method coverage: 89.3% (226 of 253)
+  Covered methods: 229
+  Fully covered methods: 226
+  Total methods: 253
+
+CopilotMultiAgent.API                                                                      33.3%
+  CopilotMultiAgent.API.Controllers.CubeVolumeController                                    100%
+  CopilotMultiAgent.API.Controllers.CylinderVolumeController                                100%
+  CopilotMultiAgent.API.Controllers.FibonacciController                                     100%
+  CopilotMultiAgent.API.Controllers.MinMaxController                                        100%
+  CopilotMultiAgent.API.Controllers.RhombusController                                       100%
+  CopilotMultiAgent.API.Controllers.SchedulesController                                     100%
+  CopilotMultiAgent.API.Controllers.SortingController                                       100%
+  CopilotMultiAgent.API.Controllers.SphereVolumeController                                  100%
+  CopilotMultiAgent.API.Controllers.TodosController                                         100%
+  CopilotMultiAgent.API.Controllers.TriangularPyramidVolumeController                       100%
+  CopilotMultiAgent.API.Middleware.ExceptionHandlingMiddleware                              100%
+  Microsoft.AspNetCore.OpenApi.Generated                                                      1%
+  Program                                                                                   100%
+  System.Runtime.CompilerServices                                                             0%
+
+CopilotMultiAgent.Application                                                              99.5%
+  CopilotMultiAgent.Application.Common.Exceptions.NotFoundException                         100%
+  CopilotMultiAgent.Application.CubeVolume.CubeVolumeAlgorithm                              100%
+  CopilotMultiAgent.Application.CylinderVolume.CylinderVolumeAlgorithm                      100%
+  CopilotMultiAgent.Application.DTOs.CreateScheduleDto                                      100%
+  CopilotMultiAgent.Application.DTOs.CreateTodoDto                                          100%
+  CopilotMultiAgent.Application.DTOs.CubeVolumeRequestDto                                   100%
+  CopilotMultiAgent.Application.DTOs.CubeVolumeResultDto                                    100%
+  CopilotMultiAgent.Application.DTOs.CylinderVolumeRequestDto                               100%
+  CopilotMultiAgent.Application.DTOs.CylinderVolumeResultDto                                100%
+  CopilotMultiAgent.Application.DTOs.FibonacciRequestDto                                    100%
+  CopilotMultiAgent.Application.DTOs.FibonacciResultDto                                     100%
+  CopilotMultiAgent.Application.DTOs.MinMaxRequestDto                                       100%
+  CopilotMultiAgent.Application.DTOs.MinMaxResultDto                                        100%
+  CopilotMultiAgent.Application.DTOs.PagedResultDto<T>                                      100%
+  CopilotMultiAgent.Application.DTOs.RhombusRequestDto                                      100%
+  CopilotMultiAgent.Application.DTOs.RhombusResultDto                                       100%
+  CopilotMultiAgent.Application.DTOs.ScheduleDto                                            100%
+  CopilotMultiAgent.Application.DTOs.SortRequestDto                                         100%
+  CopilotMultiAgent.Application.DTOs.SortResultDto                                          100%
+  CopilotMultiAgent.Application.DTOs.SphereVolumeRequestDto                                 100%
+  CopilotMultiAgent.Application.DTOs.SphereVolumeResultDto                                  100%
+  CopilotMultiAgent.Application.DTOs.TodoDto                                                100%
+  CopilotMultiAgent.Application.DTOs.TodoQueryDto                                           100%
+  CopilotMultiAgent.Application.DTOs.TriangularPyramidVolumeRequestDto                      100%
+  CopilotMultiAgent.Application.DTOs.TriangularPyramidVolumeResultDto                       100%
+  CopilotMultiAgent.Application.DTOs.UpdateScheduleDto                                      100%
+  CopilotMultiAgent.Application.DTOs.UpdateTodoDto                                          100%
+  CopilotMultiAgent.Application.Fibonacci.IterativeFibonacciAlgorithm                       100%
+  CopilotMultiAgent.Application.MinMax.LinearScanMinMaxAlgorithm                            100%
+  CopilotMultiAgent.Application.Rhombus.RhombusAlgorithm                                    100%
+  CopilotMultiAgent.Application.Services.CubeVolumeService                                  100%
+  CopilotMultiAgent.Application.Services.CylinderVolumeService                              100%
+  CopilotMultiAgent.Application.Services.FibonacciService                                   100%
+  CopilotMultiAgent.Application.Services.MinMaxService                                      100%
+  CopilotMultiAgent.Application.Services.RhombusService                                     100%
+  CopilotMultiAgent.Application.Services.ScheduleService                                    100%
+  CopilotMultiAgent.Application.Services.SortingService                                     100%
+  CopilotMultiAgent.Application.Services.SphereVolumeService                                100%
+  CopilotMultiAgent.Application.Services.TodoService                                       97.4%
+  CopilotMultiAgent.Application.Services.TriangularPyramidVolumeService                     100%
+  CopilotMultiAgent.Application.Sorting.BubbleSortAlgorithm                                 100%
+  CopilotMultiAgent.Application.Sorting.MergeSortAlgorithm                                  100%
+  CopilotMultiAgent.Application.Sorting.QuickSortAlgorithm                                  100%
+  CopilotMultiAgent.Application.Sorting.SortHelper                                          100%
+  CopilotMultiAgent.Application.SphereVolume.SphereVolumeAlgorithm                          100%
+  CopilotMultiAgent.Application.TriangularPyramidVolume.TriangularPyramidVolumeAlgorithm    100%
+
+CopilotMultiAgent.Domain                                                                    100%
+  CopilotMultiAgent.Domain.Entities.Schedule                                                100%
+  CopilotMultiAgent.Domain.Entities.TodoItem                                                100%
+  CopilotMultiAgent.Domain.Exceptions.DomainException                                       100%
+
+CopilotMultiAgent.Infrastructure                                                            100%
+  CopilotMultiAgent.Infrastructure.DependencyInjection                                      100%
+  CopilotMultiAgent.Infrastructure.Persistence.AppDbContext                                 100%
+  CopilotMultiAgent.Infrastructure.Repositories.ScheduleRepository                          100%
+  CopilotMultiAgent.Infrastructure.Repositories.TodoRepository                              100%
